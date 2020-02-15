@@ -33,5 +33,7 @@ Route::get('/about', 'PageController@about');
 Route::get('/articles', 'ArticleController@index')
   ->name('articles.index'); // имя маршрута, нужно для того, чтобы не создавать ссылки руками
 
+Route::get('/articles/{id}', 'ArticleController@show')
+  ->name('articles.show');
 
 
