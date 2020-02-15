@@ -1,5 +1,13 @@
 @extends('layouts.app')
 
+@section('flash')
+@if (session('status'))
+    <div>
+        {{ session('status') }}
+    </div>
+@endif
+@endsection
+
 @section('content')
     <h1>Список статей</h1>
     @foreach ($articles as $article)
