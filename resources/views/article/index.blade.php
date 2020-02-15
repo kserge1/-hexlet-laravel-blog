@@ -9,3 +9,7 @@
         <div>{{Str::limit($article->body, 200)}}</div>
     @endforeach
 @endsection
+
+@section('paginator')
+{{ $articles->links() }}
+@endsection

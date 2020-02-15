@@ -3,12 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Article;
 
 class ArticleController extends Controller
 {
     public function index()
     {
-        $articles = Article::paginate();
+        $articles = Article::paginate(3);
 
         // Статьи передаются в шаблон
         // compact('articles') => [ 'articles' => $articles ]

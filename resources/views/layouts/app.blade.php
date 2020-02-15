@@ -15,6 +15,9 @@
             <div>
                 @yield('content')
             </div>
+            <div>
+				@yield('paginator')
+            </div>
         </div>
     </body>
 </html>

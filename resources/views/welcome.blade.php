@@ -94,7 +94,7 @@
                     <a href="https://vapor.laravel.com">Vapor</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                     <a href="/about">About</a>
-                    <a href="/articles">Articles</a>
+                    <a href="{{ route('articles.index') }}">Articles</a>
                 </div>
             </div>
         </div>
