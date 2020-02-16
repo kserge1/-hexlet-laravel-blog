@@ -28,9 +28,10 @@ Route::get('/', function () {
 
 Route::get('/about', 'PageController@about');
 
+Route::resource('/articles', 'ArticleController');
 
 // Название сущности в URL во множественном числе, контроллер в единственном
-Route::get('/articles', 'ArticleController@index')
+/*Route::get('/articles', 'ArticleController@index')
   ->name('articles.index'); // имя маршрута, нужно для того, чтобы не создавать ссылки руками
 
 Route::get('/articles/create', 'ArticleController@create')
@@ -50,6 +51,7 @@ Route::get('/articles/{id}/edit', 'ArticleController@edit')
 
 Route::delete('/articles/{id}', 'ArticleController@destroy')
   ->name('articles.destroy');
+*/
 
 
 
